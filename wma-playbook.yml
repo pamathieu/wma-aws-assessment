@@ -1,0 +1,29 @@
+---
+
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: update all packages
+      command: yum update --quiet -y
+
+    - name: Install xfsprogs
+      command: yum install --quiet -y  xfsprogs
+
+    - name: create directory /mnt/data
+      command: mkdir /mnt/data
+
+    - name: Create an XFS filesystem on /dev/xvdb
+      command: mkfs.xfs /dev/xvdb
+
+    - name: Mount XFS device to  /mnt/data
+      command: mount /dev/xvdb  /mnt/data/
+
+    - name: Create a new user called serviceuser
+      command: useradd serviceuser
+
+    - name: Grant the serviceuser sudo privileges
+      command: usermod -aG wheel serviceuser
+
+    - name: Reboot the instance
+      command: reboot
