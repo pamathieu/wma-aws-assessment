@@ -1,4 +1,4 @@
-# wma-aws-assessment
+# aws -  Sample Virtual Private Cloud along with services such as EC2 instances in public and private subnets
 WMA AWS Assessment in to parts (PART A and PART B)
 
                                                   PART A
