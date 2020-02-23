@@ -1,5 +1,4 @@
 # aws -  Sample Virtual Private Cloud with public and private subnets.
-WMA AWS Assessment in to parts (PART A and PART B)
 
                                                   PART A
 The Terraform scripts (maint.tf and variables.tf) will deploy 1 custom VPC with 1 private Subnet and 1 public Subnet.
