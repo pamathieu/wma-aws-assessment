@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 ###############
 #  This is file is used a support to run bash scripts
 #
@@ -47,7 +48,7 @@ aws secretsmanager get-secret-value --secret-id  wma-ssh-deploy-key --profile=ho
 
 
 ### To Run the Terraform scripts
-    # Initiate the state, as onetime operation, unless it's needed. It nitializes a Terraform working directory
+    # Initiate the state, as onetime operation, unless it's needed. It initializes a Terraform working directory
     terraform init
 
     #Validate the Terraform files. In this case, variables.tf and main.tf

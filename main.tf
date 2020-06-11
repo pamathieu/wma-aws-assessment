@@ -1,6 +1,6 @@
 /*
   This Terraform script will deploy 1 custom VPC with 1 private Subnet and 1 public Subnet.
-   One private APP EC2 intance in the private Subnet and 1 public EC2 intance in the public subnet.
+   One private APP EC2 intatence in the private Subnet and 1 public EC2 intance in the public subnet.
    The public EC2 intance will be used as Jumpbox or bastion host to allow SSH connection with the private instance.
 
 Pierre Mathieu, 08/25/2019
